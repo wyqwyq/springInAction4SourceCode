@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="concert.ConcertTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-10T14:20:34" hostname="Yunqings-MacBook-Pro.local" time="0.009">
+  <properties/>
+  <testcase name="testAudience" classname="concert.ConcertTest" time="0.009"/>
+  <system-out><![CDATA[Silencing cell phones
+Taking seats
+PerformanceImpl.perform
+CLAP CLAP CLAP!!!
+Perform encore
+]]></system-out>
+  <system-err><![CDATA[六月 10, 2017 10:20:33 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+信息: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+六月 10, 2017 10:20:33 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13e0c199, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42949e9e]
+六月 10, 2017 10:20:34 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@51caf774: startup date [Sat Jun 10 22:20:34 CST 2017]; root of context hierarchy
+]]></system-err>
+</testsuite>

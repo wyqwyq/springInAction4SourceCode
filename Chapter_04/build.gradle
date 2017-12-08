@@ -1,0 +1,28 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+
+eclipse {
+  classpath {
+    downloadSources=true
+  }
+}
+
+dependencies {
+  compile 'org.springframework:spring-context:4.1.4.RELEASE'
+  compile 'org.springframework:spring-aop:4.1.4.RELEASE'
+  compile 'org.aspectj:aspectjrt:1.8.5'
+  compile 'org.aspectj:aspectjweaver:1.8.5'
+
+  testCompile 'junit:junit:4.12'
+  testCompile 'com.google.truth:truth:0.25'
+  testCompile 'org.springframework:spring-test:4.1.4.RELEASE'
+}
+
+tasks.matching {it instanceof Test}.all {
+    testLogging.events = ["failed", "passed", "skipped"]
+}
